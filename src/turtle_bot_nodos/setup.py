@@ -23,7 +23,8 @@ setup(
             'turtle_bot_teleop_ = turtle_bot_nodos.turtle_bot_teleop:main',
             'turtle_bot_interface = turtle_bot_nodos.turtle_bot_interface:main',
             'turtle_bot_player = turtle_bot_nodos.turtle_bot_player:main',
-            'turtle_bot_save_route = turtle_bot_nodos.turtle_bot_save_route:main'#,
+            'turtle_bot_save_route = turtle_bot_nodos.turtle_bot_save_route:main',
+            'turtle_bot_position = turtle_bot_nodos.turtle_bot_position:main'#,
             #'robot_hearer = turtle_bot_nodos.robot_hearer:main'
         ],
     },

@@ -119,8 +119,8 @@ class Robot(Circle):
             x: Posición x, en el marco de referencia de coppelia, a la cual se mueve el robot
             y: posición y, en el marco de referencia de coppelia, a la cual se mueve el robot
         """
-        xp = x*100+250 # Hallamos la equivalencia de la posición x en coppelia con los pixeles de la pantalla de pygame
-        yp = -1*y*100+250 # Hallamos la equivalencia de la posición x en coppelia con los pixeles de la pantalla de pygame
+        xp = x*60+300 # Hallamos la equivalencia de la posición x en coppelia con los pixeles de la pantalla de pygame
+        yp = -1*y*60+300 # Hallamos la equivalencia de la posición x en coppelia con los pixeles de la pantalla de pygame
 
         self.center = (xp,yp)
 
@@ -518,7 +518,7 @@ class Interface(Node):
         Args:
             msg: mensaje enviado a través del tópico 'turtlebot_route'
         """
-        self.route.append(msg.data)
+        self.route.append(msg.data+"\n")
     
     def SaveRoute(self):
         """Guarda la lista 'route' en un archivo .txt"""
@@ -643,10 +643,6 @@ class App():
             color: color (RGB) con el cual se desea pintar las plantas en la interfaz
         """
         plants = []
-        plants.append(Plant((250,150),25,color))
-        plants.append(Plant((100,275),25,color))
-        plants.append(Plant((400,275),25,color))
-        plants.append(Plant((250,350),25,color))
         
         return plants
 

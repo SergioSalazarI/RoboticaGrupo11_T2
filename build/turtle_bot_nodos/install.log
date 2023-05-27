@@ -1,10 +1,14 @@
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/turtle_bot_interface.py
+/home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/brazo.py
+/home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/turtle_bot_position.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__init__.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/robot_hearer.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/turtle_bot_player.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/turtle_bot_save_route.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/turtle_bot_teleop.py
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/turtle_bot_interface.cpython-310.pyc
+/home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/brazo.cpython-310.pyc
+/home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/turtle_bot_position.cpython-310.pyc
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/__init__.cpython-310.pyc
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/robot_hearer.cpython-310.pyc
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos/__pycache__/turtle_bot_player.cpython-310.pyc
@@ -21,5 +25,6 @@
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/python3.10/site-packages/turtle_bot_nodos-0.0.0-py3.10.egg-info/zip-safe
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/turtle_bot_nodos/turtle_bot_interface
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/turtle_bot_nodos/turtle_bot_player
+/home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/turtle_bot_nodos/turtle_bot_position
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/turtle_bot_nodos/turtle_bot_save_route
 /home/sergio/taller_2_grupo_11/install/turtle_bot_nodos/lib/turtle_bot_nodos/turtle_bot_teleop_

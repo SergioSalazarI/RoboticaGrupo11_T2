@@ -13,8 +13,10 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 turtle_bot_nodos/__init__.py
+turtle_bot_nodos/brazo.py
 turtle_bot_nodos/robot_hearer.py
 turtle_bot_nodos/turtle_bot_interface.py
 turtle_bot_nodos/turtle_bot_player.py
+turtle_bot_nodos/turtle_bot_position.py
 turtle_bot_nodos/turtle_bot_save_route.py
 turtle_bot_nodos/turtle_bot_teleop.py

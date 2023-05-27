@@ -20,6 +20,7 @@ class route_saver(Node):
         """
         super().__init__('route_saver')
         self.cmd_publisher = self.create_publisher(Twist,'/turtlebot_cmdVel',10)
+        self.cmd_publisher_route = self.create_publisher(String,'/turtlebot_route',10)
         self.srv = self.create_service(ReproduceRoute, "/RP", self.replicate_route_callback)
 
     def replicate_route_callback(self, request, response):
@@ -70,6 +71,10 @@ class route_saver(Node):
         f = open(self.file_path)
         lines = f.readlines()
         for l in lines:
+            string_mss = String()
+            string_mss.data = l.split(sep="\n")[0]
+            self.cmd_publisher_route.publish(string_mss)
+
             ll = l.split(sep=';')
             duration = float(ll[0])
             linear_vel = float(ll[1])

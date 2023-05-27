@@ -20,6 +20,7 @@ class route_saver(Node):
         """
         super().__init__('route_saver')
         self.cmd_publisher = self.create_publisher(Twist,'/turtlebot_cmdVel',10)
+        self.cmd_publisher_route = self.create_publisher(String,'/turtlebot_route',10)
         self.srv = self.create_service(ReproduceRoute, "/RP", self.replicate_route_callback)
 
     def replicate_route_callback(self, request, response):
@@ -47,8 +48,8 @@ class route_saver(Node):
         """
 
         twist_mss = Twist()
-        twist_mss.linear.x = lineal #a=1 adelante
-        twist_mss.angular.z = angular #l=1 derecha
+        twist_mss.linear.x = lineal
+        twist_mss.angular.z = angular
         self.cmd_publisher.publish(twist_mss)
             
     def stops_movement(self):
@@ -56,8 +57,8 @@ class route_saver(Node):
         Twist en el tópico '/turtlebot_cmdVel' con velocidad lineal y angular en cero."""
 
         twist_mss = Twist()
-        twist_mss.linear.x = 0.0#a=1 adelante
-        twist_mss.angular.z = 0.0 #l=1 derecha
+        twist_mss.linear.x = 0.0
+        twist_mss.angular.z = 0.0
         self.cmd_publisher.publish(twist_mss)
 
     def read_keys(self):
@@ -70,17 +71,14 @@ class route_saver(Node):
         f = open(self.file_path)
         lines = f.readlines()
         for l in lines:
+            string_mss = String()
+            string_mss.data = l.split(sep="\n")[0]
+            self.cmd_publisher_route.publish(string_mss)
+
             ll = l.split(sep=';')
-            #key = ll[0]
             duration = float(ll[0])
             linear_vel = float(ll[1])
             angular_vel = float(ll[2].split(sep="\n")[0])
-
-            #if key =='s':
-            #    linear_vel=-1*linear_vel
-            #elif key == 'd':
-            #    angular_vel = -1*angular_vel
-            #print(f"[INFO] Tecla:{key} / Duración: {duration} / Velocidad: {linear_vel}, {angular_vel}")
 
             print(f"[INFO] Duración: {duration} / Velocidad: {linear_vel}, {angular_vel}")
 
